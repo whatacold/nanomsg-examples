@@ -14,3 +14,11 @@ all:
 
 clean:
 	rm -f pipeline reqrep pair pubsub survey bus
+
+run:all
+	@./pipeline.sh
+	@./reqrep.sh
+	@./pair.sh
+	@./pubsub.sh
+	@./survey.sh
+	@./bus.sh
