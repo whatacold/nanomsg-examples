@@ -1,0 +1,6 @@
+digraph pipeline {
+    rankdir = LR;
+    label = "Pipeline (A One-way Pipe)";
+
+    node0 -> node1;
+}

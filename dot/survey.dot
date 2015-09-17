@@ -1,0 +1,13 @@
+digraph survey {
+    label = "Survey (Everybody Votes)";
+    concentrate = true;
+
+    server -> client0;
+    client0 -> server;
+
+    server -> client1;
+    client1 -> server;
+
+    server -> client2;
+    client2 -> server;
+}

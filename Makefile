@@ -12,13 +12,20 @@ all:
 	gcc survey.c -o survey $(LIBA) $(LIBS)
 	gcc bus.c -o bus $(LIBA) $(LIBS)
 
-clean:
+clean: graph-clean
 	rm -f pipeline reqrep pair pubsub survey bus
 
-run:all
+run: all
 	@./pipeline.sh
 	@./reqrep.sh
 	@./pair.sh
 	@./pubsub.sh
 	@./survey.sh
 	@./bus.sh
+
+dot/%.png: dot/%.dot
+	dot -Tpng -o $@ $<
+
+graph: dot/pipeline.png dot/reqrep.png dot/pair.png dot/pubsub.png dot/survey.png dot/bus.png
+graph-clean:
+	rm -f dot/pipeline.png dot/reqrep.png dot/pair.png dot/pubsub.png dot/survey.png dot/bus.png

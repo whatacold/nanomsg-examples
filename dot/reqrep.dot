@@ -1,0 +1,8 @@
+digraph reqrep {
+    rankdir = LR;
+    label = "Request/Reply (I ask, you answer)";
+    concentrate = true;
+
+    node0 -> node1;
+    node1 -> node0;
+}

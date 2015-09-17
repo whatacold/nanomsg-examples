@@ -1,0 +1,8 @@
+digraph pair {
+    rankdir = LR;
+    label = "Two Way Radio";
+    concentrate = true;
+
+    node0 -> node1;
+    node1 -> node0;
+}

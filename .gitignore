@@ -4,3 +4,4 @@ pipeline
 pubsub
 reqrep
 survey
+*/*.png

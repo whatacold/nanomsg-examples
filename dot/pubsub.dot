@@ -1,0 +1,7 @@
+digraph pubsub {
+    label = "Pub/Sub (Topics & Broadcast)";
+
+    server -> client0;
+    server -> client1;
+    server -> client2;
+}
