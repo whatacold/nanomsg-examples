@@ -1,5 +1,7 @@
 #include <assert.h>
-#include <libc.h>
+#include <unistd.h>
+#include <string.h>
+#include <pthread.h>
 #include <nanomsg/nn.h>
 #include <nanomsg/pair.h>
 #include <stdio.h>
